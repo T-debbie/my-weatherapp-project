@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>Search Engine</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter City..."
+            class="search-input"
+            id="search-text-input"
+            required
+            autofocus
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1 class="current-city" id="current-city">Lagos</h1>
+            <p class="current-detail">
+              <span id="current-date"> Monday 21:50, </span> moderately hot
+              <br />
+              Humidity: <strong> 66% </strong> , wind:
+              <strong> 4.47km/h </strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌤</span
+            ><span class="current-temperature-value" id="current-temperature"
+              >15</span
+            ><span class="current-temperature-degree">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="https://github.com/T-debbie" target="_blank">Deborah</a> and
+          is
+          <a
+            href="https://github.com/T-debbie/my-weatherapp-project"
+            target="_blank"
+          >
+            open-sourced on GitHub</a
+          >
+          and
+          <a href="#" target="_blank">hosted on Netlify.</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
